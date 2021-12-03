@@ -1,3 +1,8 @@
+/*	
+	Time complexity  : O(n^2) -> nested for loops
+	Space complexity : O(n) -> list comprehension
+*/
+
 def lineThroughPoints(points):
     
 	N = 0
@@ -28,7 +33,7 @@ def getLineParams(p1, p2):
 		intercept = p1[1] - slope * p1[0]
 	else:
 		slope = float('inf');
-		intercept = p1[0] # Store x in intercept term if slope is infinite
+		intercept = p1[0] # Store x in intercept term if slope is infinite (a little hacky)
 
 	return slope, intercept
 
